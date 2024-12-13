@@ -1,0 +1,69 @@
+body {
+  background: radial-gradient(circle, #0d0d0d 60%, #1a1a1a 100%);
+  color: #00e6e6;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+}
+
+h1 {
+  color: #ff4c4c;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff4c4c;
+}
+
+.reactor-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.reactor-button {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #ff4c4c 0%, #990000 70%, #330000 100%);
+  border-radius: 50%;
+  border: 8px solid #ff4c4c;
+  box-shadow: 0 0 40px #ff4c4c, inset 0 0 30px #ff6666, inset 0 0 50px #ff1c1c;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.reactor-button:hover {
+  box-shadow: 0 0 50px #ff4c4c, inset 0 0 60px #ff1c1c, inset 0 0 70px #ff6666;
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 40px #ff4c4c, inset 0 0 30px #ff6666;
+  }
+  50% {
+    box-shadow: 0 0 50px #ff1c1c, inset 0 0 40px #ff9999;
+  }
+}
+
+.output {
+  margin-top: 30px;
+  padding: 15px;
+  background: #1a1a1a;
+  border: 2px solid #00e6e6;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00e6e6;
+  color: #ffffff;
+  text-align: left;
+  height: 200px;
+  overflow-y: auto;
+  font-size: 1.2em;
+}
